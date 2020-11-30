@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 10:38:36 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 14:22:18 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 14:40:36 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void	do_research(contact (&phonebook)[8], int nb_ppl)
 		phonebook[i].print_search(i + 1);
 	std::cout << "--------------------------------------------\n" << std::endl;
 	std::cout << "Choose the contact number that you want to print the informations: ";
-	
 	
 	//waiting for a correct input from the user (a nb between 1 and nb of contacts added)
 	std::string	input;

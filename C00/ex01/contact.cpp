@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 13:33:52 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 14:16:39 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 14:40:23 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	contact::add_contact()
 		{
 			std::cout << "Please type your " << field_name[i] << ": ";
 			getline(std::cin, info[i]);
-
+			
 		//we loop until the field is filled
 		} while(info[i].empty());
 	}
