@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 10:38:36 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 12:35:01 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 13:00:09 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ bool	str_is_digit(std::string &input)
 	return (1);
 }
 
-void	do_research(contact phonebook[8], int nb_ppl)
+void	do_research(contact (&phonebook)[8], int nb_ppl)
 {
 	std::cout << "--------------------------------------------\n";
 	std::cout << "|    index|first name| last name|  nickname|\n";
