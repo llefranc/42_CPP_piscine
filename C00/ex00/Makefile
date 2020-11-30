@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/11/30 12:44:59 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/11/30 12:49:44 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,6 @@ re		:	fclean all
 
 .PHONY	:	all clean fclean re
 
-%.o		:	%.c
+%.o		:	%.cpp
 			$(CC) $(FLAGS) -o $@ -c $<
 # for creating .o with flags
