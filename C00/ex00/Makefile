@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/11/28 10:34:39 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/11/30 12:44:59 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ CC			=	clang++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp
-OBJS		=	$(SRCS:.c=.o)
+OBJS		=	$(SRCS:.cpp=.o)
 
 all		: 	$(NAME)
 
