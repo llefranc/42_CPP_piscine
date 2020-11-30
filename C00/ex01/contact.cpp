@@ -6,12 +6,13 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 13:33:52 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 13:04:37 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 14:16:39 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "contact.hpp"
 
+//initialize field_name array
 contact::contact()
 {
 	field_name[0] = "first name";
@@ -27,6 +28,7 @@ contact::contact()
 	field_name[10] = "darkest secret";
 }
 
+//Waits for user input (11 times) to fill each field of contact information array.
 void	contact::add_contact()
 {
 	for (int i = 0; i < 11; i++)
@@ -35,17 +37,21 @@ void	contact::add_contact()
 		{
 			std::cout << "Please type your " << field_name[i] << ": ";
 			getline(std::cin, info[i]);
+
+		//we loop until the field is filled
 		} while(info[i].empty());
 	}
 	std::cout << "Contact succesfully added!\n\n";
 }
 
+//Prints the 11 fields of contact information.
 void	contact::print_contact()
 {
 	for (int i = 0; i < 11; i++)
 		std::cout << field_name[i] << " : " << info[i] << std::endl;
 }
 
+//Prints the index of the contact and the 3 first fields of contact information.
 void	contact::print_search(int index)
 {
 	std::string tmp;
@@ -56,13 +62,12 @@ void	contact::print_search(int index)
 		tmp = info[i];
 		if (tmp.length() <= 10)
 		{
-			int	nb_spaces = 10 - tmp.length();
-			while (nb_spaces-- > 0)
-				std::cout << ' ';
+			std::cout.width(10);
 			std::cout << tmp;
 		}
 		else
 		{
+			//if lengh > 10, prints only the first nine characters and a dot
 			tmp.resize(9);
 			std::cout << tmp << ".";
 		}

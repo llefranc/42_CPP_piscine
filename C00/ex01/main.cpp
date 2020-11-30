@@ -6,13 +6,13 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 10:38:36 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 13:04:45 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 14:22:18 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "contact.hpp"
 
-
+//Returns 1 if the string is only made of digit, 0 otherwise.
 bool	str_is_digit(std::string &input)
 {
 	for (int i = 0; input[i]; i++)
@@ -21,15 +21,22 @@ bool	str_is_digit(std::string &input)
 	return (1);
 }
 
+//Prints all the contacts added with an index and the first 3 fields of
+//information, then wait for user input that must choose a contact, and prints
+//all the information about this one.
 void	do_research(contact (&phonebook)[8], int nb_ppl)
 {
 	std::cout << "--------------------------------------------\n";
 	std::cout << "|    index|first name| last name|  nickname|\n";
+	
+	//printing first 3 information fields
 	for (int i = 0; i < nb_ppl; i++)
 		phonebook[i].print_search(i + 1);
 	std::cout << "--------------------------------------------\n" << std::endl;
 	std::cout << "Choose the contact number that you want to print the informations: ";
 	
+	
+	//waiting for a correct input from the user (a nb between 1 and nb of contacts added)
 	std::string	input;
 	while (1)
 	{
@@ -65,19 +72,27 @@ int main()
 					" SEARCH and EXIT\n";
 			getline(std::cin, input);
 		} while(input.empty());
+
+		//Adds a contact
 		if (!input.compare("ADD") && nb_ppl < 8)
 			phonebook[nb_ppl++].add_contact();
 		else if (!input.compare("ADD") && nb_ppl >= 8)
 			std::cout << "You reach the maximum contact in this phonebook (8)\n\n";
+
+		//Do the research
 		else if (!input.compare("SEARCH") && !nb_ppl)
 			std::cout << "Please add a contact before doing a research\n\n";
 		else if (!input.compare("SEARCH"))
 			do_research(phonebook, nb_ppl);
+
+		//Exits
 		else if (!input.compare("EXIT"))
 		{
 			std::cout << "Goodbye!\n";
 			return (0);
 		}
+
+		//If wrong input, loops until correct one
 		else
 			std::cout << "\nWrong input! ";
 	}
