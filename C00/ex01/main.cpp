@@ -24,7 +24,7 @@ bool	str_is_digit(std::string &input)
 //Prints all the contacts added with an index and the first 3 fields of
 //information, then wait for user input that must choose a contact, and prints
 //all the information about this one.
-void	do_research(contact (&phonebook)[8], int nb_ppl)
+void	do_research(contact *phonebook, int nb_ppl)
 {
 	std::cout << "--------------------------------------------\n";
 	std::cout << "|    index|first name| last name|  nickname|\n";
