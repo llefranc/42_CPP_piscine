@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 13:33:52 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 14:57:29 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 23:37:31 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,17 +59,13 @@ void	contact::print_search(int index)
 	{
 		tmp = info[i];
 		if (tmp.length() <= 10)
-		{
-			std::cout.width(10);
-			std::cout << tmp;
-		}
+			std::cout << std::setw(10) << tmp << "|";
 		else
 		{
 			//if lengh > 10, prints only the first nine characters and a dot
 			tmp.resize(9);
-			std::cout << tmp << ".";
+			std::cout << tmp << "." << "|";
 		}
-		std::cout << '|';
 	}
 	std::cout << std::endl;
 }

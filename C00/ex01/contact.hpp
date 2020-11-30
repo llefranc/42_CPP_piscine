@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 11:23:04 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 14:23:16 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/11/30 23:34:49 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 #define WELCOMING_MSG "Welcome to the phonebook !\n-------------------\n\n"
 
