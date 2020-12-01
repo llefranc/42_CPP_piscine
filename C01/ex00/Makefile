@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/11/30 19:18:09 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/01 12:39:53 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ NAME		=	pony
 CC			=	clang++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
-SRCS		=	main.cpp
-# HEADER		=	contact.hpp
+SRCS		=	main.cpp pony.cpp
+HEADER		=	pony.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 all		: 	$(NAME)
