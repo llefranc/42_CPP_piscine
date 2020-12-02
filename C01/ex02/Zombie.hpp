@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:16:01 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 12:27:43 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/02 12:51:27 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ class Zombie
 {
 	private:
 		
-		std::string m_name;   //name of the zombie
-		std::string m_type;   //type of the zombie
+		std::string m_name;
+		std::string m_type;
 
 	public:
 		

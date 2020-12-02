@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   ZombieHorde.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/01 20:02:23 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 12:50:02 by lucaslefran      ###   ########.fr       */
+/*   Created: 2020/12/02 12:52:20 by lucaslefran       #+#    #+#             */
+/*   Updated: 2020/12/02 13:23:43 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIEEVENT_HPP
-#define ZOMBIEEVENT_HPP
+#ifndef ZOMBIEHORDE_HPP
+#define ZOMBIEHORDE_HPP
 
 #include "Zombie.hpp"
 
-class ZombieEvent
+class ZombieHorde
 {
 	private:
-	
-		std::string m_type;
+
+		int m_nbZombie;           //nb of zombie if zombieArray
+		Zombie *m_zombieArray;    //will contain n Zombie object
 		std::string m_names[5];   //pool of names for giving random names
 
 	public:	
 
-		ZombieEvent();
-		ZombieEvent(std::string type);
-
-		void setZombieType(std::string const &type);
-		Zombie* newZombie(std::string const &name);
-		Zombie* randomChump() const;
+		ZombieHorde(unsigned int const);
+		~ZombieHorde();
+		
+		void announce () const;
 };
 
 #endif

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombie.cpp                                         :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:22:17 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 12:50:28 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/02 13:02:35 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,10 @@ void Zombie::announce() const
 std::string Zombie::getName() const
 {
 	return (m_name);
+}
+
+//Sets a new name for the zombie
+void Zombie::setName(std::string const &newName)
+{
+	m_name = newName;
 }

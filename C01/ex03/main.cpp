@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/01 20:02:23 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 12:50:02 by lucaslefran      ###   ########.fr       */
+/*   Created: 2020/12/02 12:42:21 by lucaslefran       #+#    #+#             */
+/*   Updated: 2020/12/02 15:13:12 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIEEVENT_HPP
-#define ZOMBIEEVENT_HPP
+#include "ZombieHorde.hpp"
 
-#include "Zombie.hpp"
-
-class ZombieEvent
+int main()
 {
-	private:
+	std::cout << "Creating a horde of 4 zombies :\n";
+	ZombieHorde zombieHorde(4);
+	zombieHorde.announce();
 	
-		std::string m_type;
-		std::string m_names[5];   //pool of names for giving random names
-
-	public:	
-
-		ZombieEvent();
-		ZombieEvent(std::string type);
-
-		void setZombieType(std::string const &type);
-		Zombie* newZombie(std::string const &name);
-		Zombie* randomChump() const;
-};
-
-#endif
+	std::cout << "\n\nCreating a horde of 6 zombies :\n";
+	ZombieHorde zombieHorde2(6);
+	zombieHorde2.announce();
+	return (0);
+}
