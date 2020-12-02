@@ -32,6 +32,8 @@ A REMPLIR
 - [FAQ sur le C++ (FR)][6]
 - [How to properly initialize values in classes][7]
 - [Purpose of this pointer][8]
+- [How new operator works][9]
+- [Converting an address to a string using stringstream][10]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C00/cpp00.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -41,3 +43,5 @@ A REMPLIR
 [6]: https://cpp.developpez.com/faq/cpp/
 [7]: https://stackoverflow.com/questions/40378205/c-initialising-fields-directly-vs-initialisation-list-in-default-constructor?fbclid=IwAR3k7ZUjcuU7qcHgwvDGASBbHLkRTcl9NZfvPQ2L_6a8-XNKnPyCn_rFoes
 [8]: https://stackoverflow.com/questions/2828841/what-is-purpose-of-a-this-pointer-in-c
+[9]: https://docs.microsoft.com/en-us/cpp/cpp/new-operator-cpp?view=msvc-160
+[10]: https://stackoverflow.com/questions/7850125/convert-this-pointer-to-string
