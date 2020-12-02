@@ -34,6 +34,8 @@ A REMPLIR
 - [Purpose of this pointer][8]
 - [How new operator works][9]
 - [Converting an address to a string using stringstream][10]
+- [How to chain methods][11]
+- [Pourquoi ne pas utiliser NULL en C++ (FR)][12]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C00/cpp00.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -45,3 +47,5 @@ A REMPLIR
 [8]: https://stackoverflow.com/questions/2828841/what-is-purpose-of-a-this-pointer-in-c
 [9]: https://docs.microsoft.com/en-us/cpp/cpp/new-operator-cpp?view=msvc-160
 [10]: https://stackoverflow.com/questions/7850125/convert-this-pointer-to-string
+[11]: https://www.google.com/search?sxsrf=ALeKk03NcQi7MCCOBaBP6xRQXrTRnptLqA%3A1606921571039&ei=Y63HX77iAYyWlwT_uo6oBA&q=chaining+methods+c%2B%2B&oq=chaining+methods+c%2B%2B&gs_lcp=CgZwc3ktYWIQAzIGCAAQCBAeOgcIIxCxAhAnOgYIABAHEB46BAgAEA06BQgAEMsBOggIABAHEAUQHjoECAAQEzoKCAAQCBAHEB4QEzoMCAAQCBAHEAoQHhATOggIABANEB4QEzoICAAQCBAHEB46CggAEAgQBxAKEB5Q21RY9WRghmloAHAAeACAAYMBiAHAC5IBBDE0LjOYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=psy-ab&ved=0ahUKEwj-n7Grya_tAhUMy4UKHX-dA0UQ4dUDCA0&uact=5#kpvalbx=_g63HX_f0FKyWlwSn14nQDw13
+[12]: https://h-deb.clg.qc.ca/Sujets/Divers--cplusplus/CPP--NULL.html
