@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:56:19 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 16:31:00 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/02 17:55:21 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		secondZombieOnTheStack()
 }
 
 //nBNewZombies zombies allocated on the heap and free after use
-void	zombiesOnTheHeap(int nbNewZombies)
+void	ZombiesOnTheHeap(int nbNewZombies)
 {
 	ZombieEvent zombieEvent;
 	Zombie *zombiesBitten;
@@ -44,7 +44,17 @@ void	zombiesOnTheHeap(int nbNewZombies)
 		zombiesBitten = zombieEvent.randomChump();
 		delete zombiesBitten;
 	}
+
+	//creating a zombie with a specific name using newZombie method
+	zombieEvent.setZombieType("beautiful zombie");
+	zombiesBitten = zombieEvent.newZombie("Helene");
+	std::cout << "\nBut those " << nbNewZombies << " new zombies doesn't care about humans,\n"
+	"they're attracted by a special one...\n\n";
+	zombiesBitten->announce();
+	delete zombiesBitten;
 }
+
+
 
 int main()
 {
@@ -52,6 +62,6 @@ int main()
 
 	firstZombieOnTheStack();
 	nbNewZombies = secondZombieOnTheStack();
-	zombiesOnTheHeap(nbNewZombies);
+	ZombiesOnTheHeap(nbNewZombies);
 	return (0);
 }
