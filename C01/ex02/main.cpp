@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:56:19 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/02 17:55:21 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/02 17:58:26 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,6 @@ void	ZombiesOnTheHeap(int nbNewZombies)
 	zombiesBitten->announce();
 	delete zombiesBitten;
 }
-
-
 
 int main()
 {
