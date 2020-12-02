@@ -6,13 +6,13 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/02 17:52:26 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/02 17:59:04 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	zombie
 CC			=	clang++
-FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
+FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp Zombie.cpp ZombieEvent.cpp
 HEADER		=	Zombie.hpp ZombieEvent.hpp

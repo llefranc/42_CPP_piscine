@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/28 10:38:36 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/11/30 14:40:36 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/02 18:07:20 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ bool	str_is_digit(std::string &input)
 //Prints all the contacts added with an index and the first 3 fields of
 //information, then wait for user input that must choose a contact, and prints
 //all the information about this one.
-void	do_research(contact *phonebook, int nb_ppl)
+int		do_research(contact *phonebook, int nb_ppl)
 {
 	std::cout << "--------------------------------------------\n";
 	std::cout << "|    index|first name| last name|  nickname|\n";
@@ -39,7 +39,8 @@ void	do_research(contact *phonebook, int nb_ppl)
 	std::string	input;
 	while (1)
 	{
-		getline(std::cin, input);
+		if (!(getline(std::cin, input))) //if CTRL-D (EOF)
+			return 0;
 		if (input.empty())
 			std::cout << "Choose the contact number that you want to print the informations: ";
 		else if (!str_is_digit(input))
@@ -54,6 +55,7 @@ void	do_research(contact *phonebook, int nb_ppl)
 			break;
 		}
 	}
+	return (1);
 }
 
 int main()
@@ -69,7 +71,8 @@ int main()
 		{
 			std::cout << "Please type your request. 3 possible choices : ADD,"
 					" SEARCH and EXIT\n";
-			getline(std::cin, input);
+			if (!(getline(std::cin, input)))   //if CTRL-D (EOF), program exits
+				return (0);
 		} while(input.empty());
 
 		//Adds a contact
@@ -81,8 +84,8 @@ int main()
 		//Do the research
 		else if (!input.compare("SEARCH") && !nb_ppl)
 			std::cout << "Please add a contact before doing a research\n\n";
-		else if (!input.compare("SEARCH"))
-			do_research(phonebook, nb_ppl);
+		else if (!input.compare("SEARCH") && !(do_research(phonebook, nb_ppl)))   //if EOF in do_research, program exits
+			return (0);
 
 		//Exits
 		else if (!input.compare("EXIT"))
