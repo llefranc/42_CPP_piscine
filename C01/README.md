@@ -4,7 +4,7 @@
 
 ## About
 
-2nd day of CPP piscine.
+2nd day of the CPP piscine.
 
 - Here is the [subject][1]
 
