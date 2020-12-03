@@ -4,7 +4,7 @@
 
 ## About
 
-This first day of the CPP piscine is about understanding the basic concepts of C++ (classes etc).
+1st day of the CPP piscine.
 
 - Here is the [subject][1]
 

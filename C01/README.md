@@ -1,9 +1,10 @@
 # CPP_01 (@42Paris)
 
+"Memory allocation, references, pointers to members, file streams"
+
 ## About
 
-This day of cpp is about understanding how works memory allocation, references,
-pointers to members and file streams.
+2nd day of CPP piscine.
 
 - Here is the [subject][1]
 
@@ -36,7 +37,7 @@ pointers to members and file streams.
 - [How to chain methods][11]
 - [Pourquoi ne pas utiliser NULL en C++ (FR)][12]
 
-[1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C00/cpp00.en.subject.pdf
+[1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C01/cpp01.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
 [3]: https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c/1894377-quest-ce-que-le-c
 [4]: http://www.cplusplus.com/reference/iomanip/
