@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/02 17:59:24 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/03 12:37:51 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/03 18:09:11 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,12 @@ int main(int ac, char** av)
 	std::string s2(av[3]);
 	
 	// Replacing s1 with s2 until we can't find s1 anymore
-	while (str.find(s1) != std::string::npos)
+	unsigned long found = str.find(s1);
+	while (found != std::string::npos)
+	{
 		str = str.substr(0, str.find(s1)) + s2 + str.substr(0 + str.find(s1) + s1.size());
+		found = str.find(s1, found + s2.size());   //for avoiding to loop if we replace a word with the same word
+	}
 		
 	// Writing str modified into a new file
 	std::string newFile(av[1]);
