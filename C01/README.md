@@ -1,10 +1,9 @@
 # CPP_01 (@42Paris)
 
-A REMPLIR
-
 ## About
 
-A REMPLIR
+This day of cpp is about understanding how works memory allocation, references,
+pointers to members and file streams.
 
 - Here is the [subject][1]
 
