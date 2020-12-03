@@ -6,11 +6,11 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/03 12:41:12 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/03 16:12:40 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	newsed
+NAME		=	replace
 CC			=	clang++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
