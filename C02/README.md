@@ -4,7 +4,7 @@ A REMPLIR
 
 ## About
 
-A REMPLIR
+3rd day of the CPP piscine.
 
 - Here is the [subject][1]
 
@@ -18,7 +18,7 @@ A REMPLIR
 
 2. `cd` into the root directory, then `cd` into C01 and choose the exercise. Then run `make`.
 
-        cd 42_CPP_piscine/C01/ex00
+        cd 42_CPP_piscine/C02/ex00
         make
 
 3.  Read the subject in order to have more information about how launching a specific exercise.
@@ -31,6 +31,7 @@ A REMPLIR
 - [Explanations about the constructor][5]
 - [FAQ sur le C++ (FR)][6]
 - [Forme canonique de Coplien (FR)][7]
+- [Comment ecrire une surcharge de operator= (FR)][8]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C00/cpp00.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -39,3 +40,4 @@ A REMPLIR
 [5]: https://isocpp.org/wiki/faq/ctors#init-lists
 [6]: https://cpp.developpez.com/faq/cpp/
 [7]: https://cpp.developpez.com/cours/cppavance/
+[8]: https://cpp.developpez.com/faq/cpp/?page=La-surcharge-d-operateurs#Comment-ecrire-un-operateur-d-affectation-correct

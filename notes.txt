@@ -10,6 +10,7 @@ destructeur
 ------------------------------------------------------------------------------
 copie constructeur >> copie les valeur mais AUSSI LES POINTEURS
 >> pas pareil que surchage operator=
+pour surcharge operator= interessant d'utiliser peut etre l'operateur swap
 ------------------------------------------------------------------------------
 surcharge constructeur / destructeur etc >> surcharger une fonction / methode >> 
 meme nom mais au moins un argument de type different
@@ -25,7 +26,8 @@ class integree dans d'autres classes
 ------------------------------------------------------------------------------
 const pour arguments / methodes
 ------------------------------------------------------------------------------
-refs >> dans le cas ou on copie un gros objet et pas besoin de modif
+refs >> dans le cas ou on copie un gros objet et pas besoin de modif (TOUJOURS PASSER LES
+CLASSES PAR REF sauf dans le cas de copie constructor)
 ------------------------------------------------------------------------------
 pointeur sur classes dans d'autres classes (marche comme les structures)
 ------------------------------------------------------------------------------
