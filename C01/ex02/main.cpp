@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
+/*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:56:19 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/03 12:51:20 by user42           ###   ########.fr       */
+/*   Updated: 2020/12/08 20:16:54 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int		secondZombieOnTheStack()
 	zombie2.announce();
 	
 	//generating a random number of new zombies
-	srand(time(NULL));
 	int	nbNewZombie = rand() % 4 + 1;
 	std::cout << zombie2.getName() << " is really hungry, he bit " << nbNewZombie << " people!\n\n";
 	return (nbNewZombie);
@@ -57,6 +56,9 @@ void	ZombiesOnTheHeap(int nbNewZombies)
 int main()
 {
 	int nbNewZombies;
+	
+	// For generating random number of zombies
+	srand(time(NULL));
 
 	firstZombieOnTheStack();
 	nbNewZombies = secondZombieOnTheStack();

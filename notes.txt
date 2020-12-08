@@ -1,6 +1,6 @@
 NOTIONS :
 
-types >> penser a les declarer au moment sougaite
+types >> penser a les declarer au moment souhaite
 ------------------------------------------------------------------------------
 for >> peut iterer plusieurs operandes, pas forcement besoin de les declarer
 ------------------------------------------------------------------------------
@@ -9,8 +9,11 @@ constructeur
 destructeur 
 ------------------------------------------------------------------------------
 copie constructeur >> copie les valeur mais AUSSI LES POINTEURS
+>> bien penser a utiliser initialization lsit dans cp constructor et appeler tous les copy
+constructor des membres de la classe
+
 >> pas pareil que surchage operator=
-pour surcharge operator= interessant d'utiliser peut etre l'operateur swap
+pour surcharge operator= interessant d'utiliser peut etre l'operateur swap (et le copy construcor)
 ------------------------------------------------------------------------------
 surcharge constructeur / destructeur etc >> surcharger une fonction / methode >> 
 meme nom mais au moins un argument de type different
@@ -25,6 +28,8 @@ pointeur this >> contient l'addresse de l'objet lui meme
 class integree dans d'autres classes
 ------------------------------------------------------------------------------
 const pour arguments / methodes
+const a la fin d'une methode >> indiqeu que l'objet ne pourra aps etre mnodifie
+et seuls les methodes const peuvent etre appelees sur un objet const
 ------------------------------------------------------------------------------
 refs >> dans le cas ou on copie un gros objet et pas besoin de modif (TOUJOURS PASSER LES
 CLASSES PAR REF sauf dans le cas de copie constructor)
