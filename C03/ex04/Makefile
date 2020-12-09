@@ -6,11 +6,11 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/09 18:35:31 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/09 19:44:58 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	ninjatrap
+NAME		=	supertrap
 CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
