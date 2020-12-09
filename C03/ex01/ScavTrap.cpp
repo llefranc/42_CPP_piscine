@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:37 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/08 22:54:59 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 11:13:07 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,13 @@ void ScavTrap::swap(ScavTrap& first, ScavTrap& second)
 	std::swap(first._specialChallenges, second._specialChallenges);
 }
 
-void ScavTrap::rangedAttack(const std::string& target)
+void ScavTrap::rangedAttack(const std::string& target) const
 {
 	std::cout << "SC4V-TP " << _name << " attacks " << target << " at range, causing "
 		<< _rangedAttackDamage << " points of damage!\n";
 }
 
-void ScavTrap::meleeAttack(const std::string& target)
+void ScavTrap::meleeAttack(const std::string& target) const
 {
 	std::cout << "SC4V-TP " << _name << " attacks " << target << " with a melee attack,"
 		" causing " << _meleeAttackDamage << " points of damage!\n";

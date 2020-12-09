@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:34 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 11:12:45 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 12:31:35 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,39 +17,28 @@
 #include <string>
 #include <cstdlib>
 
-class FragTrap
+#include "ClapTrap.hpp"
+
+class FragTrap : public ClapTrap
 {
 	private:
 
-		unsigned int	_hitPoints;
-		unsigned int	_maxHitPoints;
-		unsigned int	_energyPoints;
-		unsigned int	_maxEnergyPoints;
-		unsigned int	_level;
-		std::string		_name;
-		unsigned int	_meleeAttackDamage;
-		unsigned int	_rangedAttackDamage;
-		unsigned int	_armorDamageReduction;
 		std::string		_specialAttacks[5];
 		
 	public:	
 	
 		// Constructors
-		FragTrap(const std::string& name = "FragTrap");
+		FragTrap(const std::string& name);
 		
 		// Copy constructor / destructor / assignment operator
 		FragTrap(const FragTrap& copyObj);
 		~FragTrap();
 		FragTrap& operator=(const FragTrap assignObj);
-		void swap(FragTrap& first, FragTrap& second);
 	
 		// Methods
-		void rangedAttack(const std::string& target) const;
-		void meleeAttack(const std::string& target) const;
-		void takeDamage(unsigned int amount);
-		void beRepaired(unsigned int amount);
-		void beRecharged(unsigned int amount);
 		void vaulthunterDotExe(const std::string& target);
+		
+		friend void swap(FragTrap& first, FragTrap& second);
 };
 
 #endif

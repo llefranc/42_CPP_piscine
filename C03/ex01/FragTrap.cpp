@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:37 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/08 22:48:32 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 11:12:56 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,13 @@ void FragTrap::swap(FragTrap& first, FragTrap& second)
 	std::swap(first._specialAttacks, second._specialAttacks);
 }
 
-void FragTrap::rangedAttack(const std::string& target)
+void FragTrap::rangedAttack(const std::string& target) const
 {
 	std::cout << "FR4G-TP " << _name << " attacks " << target << " at range, causing "
 		<< _rangedAttackDamage << " points of damage!\n";
 }
 
-void FragTrap::meleeAttack(const std::string& target)
+void FragTrap::meleeAttack(const std::string& target) const
 {
 	std::cout << "FR4G-TP " << _name << " attacks " << target << " with a melee attack,"
 		" causing " << _meleeAttackDamage << " points of damage!\n";

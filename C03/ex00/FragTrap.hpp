@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:34 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/08 21:08:27 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 11:13:45 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ class FragTrap
 		unsigned int	_maxHitPoints;
 		unsigned int	_energyPoints;
 		unsigned int	_maxEnergyPoints;
-		int				_level;
+		unsigned int	_level;
 		std::string		_name;
-		int				_meleeAttackDamage;
-		int				_rangedAttackDamage;
+		unsigned int	_meleeAttackDamage;
+		unsigned int	_rangedAttackDamage;
 		unsigned int	_armorDamageReduction;
 		std::string		_specialAttacks[5];
 		
@@ -44,8 +44,8 @@ class FragTrap
 		void swap(FragTrap& first, FragTrap& second);
 	
 		// Methods
-		void rangedAttack(const std::string& target);
-		void meleeAttack(const std::string& target);
+		void rangedAttack(const std::string& target) const;
+		void meleeAttack(const std::string& target) const;
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 		void beRecharged(unsigned int amount);

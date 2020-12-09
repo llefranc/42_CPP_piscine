@@ -1,47 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:34 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 11:12:45 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 12:13:45 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
 
 #include <iostream>
 #include <string>
 #include <cstdlib>
 
-class FragTrap
+class ClapTrap
 {
-	private:
+	protected:
 
-		unsigned int	_hitPoints;
-		unsigned int	_maxHitPoints;
+		std::string		_name;
 		unsigned int	_energyPoints;
 		unsigned int	_maxEnergyPoints;
-		unsigned int	_level;
-		std::string		_name;
 		unsigned int	_meleeAttackDamage;
 		unsigned int	_rangedAttackDamage;
 		unsigned int	_armorDamageReduction;
-		std::string		_specialAttacks[5];
+		std::string		_type;
+		unsigned int	_hitPoints;
+		unsigned int	_maxHitPoints;
+		unsigned int	_level;
 		
 	public:	
 	
 		// Constructors
-		FragTrap(const std::string& name = "FragTrap");
+		ClapTrap(const std::string& name, unsigned int energyPoints = 100, unsigned int maxEnergyPoints = 100,
+			unsigned int meleeAttackDamage = 30, unsigned int rangedAttackDamage = 20,
+			unsigned int armorDamageReduction = 5, const std::string& type = "CL4P-TP");
 		
 		// Copy constructor / destructor / assignment operator
-		FragTrap(const FragTrap& copyObj);
-		~FragTrap();
-		FragTrap& operator=(const FragTrap assignObj);
-		void swap(FragTrap& first, FragTrap& second);
+		ClapTrap(const ClapTrap& copyObj);
+		~ClapTrap();
+		ClapTrap& operator=(const ClapTrap assignObj);
 	
 		// Methods
 		void rangedAttack(const std::string& target) const;
@@ -49,7 +50,8 @@ class FragTrap
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 		void beRecharged(unsigned int amount);
-		void vaulthunterDotExe(const std::string& target);
+		
+		friend void swap(ClapTrap& first, ClapTrap& second);
 };
 
 #endif
