@@ -44,6 +44,7 @@
 - [Public friend swap member function (for assignment operator)(2)][18]
 - [Default parameters in constructor][19]
 - [Copy and swap idiom and inheritance][20]
+- [Copy constructor and inheritance][21]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C03/cpp03.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -65,3 +66,4 @@
 [18]: https://stackoverflow.com/questions/4782692/what-does-using-stdswap-inside-the-body-of-a-class-method-implementation-mea/4782809
 [19]: https://stackoverflow.com/questions/187640/default-parameters-with-c-constructors
 [20]: https://stackoverflow.com/questions/7515617/copy-and-swap-idiom-with-inheritance
+[21]: https://stackoverflow.com/questions/12640468/c-inherited-copy-constructor-call

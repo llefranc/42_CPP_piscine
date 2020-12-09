@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:20:46 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 12:48:56 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 15:20:52 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 int main()
 {
 	// For generating random numbers in vaulthunterDotExe and challengeNewcomer
-	srand(time(NULL));
+	srand(time(0));
 	
 	
 	std::cout << "---------- FRAGTRAP TESTS ----------\n\n";

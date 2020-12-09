@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:20:46 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/08 21:07:29 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 15:21:06 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
 	FragTrap idiot;
 	
 	// For generating random numbers in vaulthunterDotExe 
-	srand(time(NULL));
+	srand(time(0));
 	
 	idiot.meleeAttack("Handsome Jack");
 	idiot.rangedAttack("Handsome Jack");
