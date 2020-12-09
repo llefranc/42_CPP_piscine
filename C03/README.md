@@ -45,6 +45,8 @@
 - [Default parameters in constructor][19]
 - [Copy and swap idiom and inheritance][20]
 - [Copy constructor and inheritance][21]
+- [Understanding casting operators][22]
+- [Inheritance and diamond problem][23]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C03/cpp03.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -67,3 +69,5 @@
 [19]: https://stackoverflow.com/questions/187640/default-parameters-with-c-constructors
 [20]: https://stackoverflow.com/questions/7515617/copy-and-swap-idiom-with-inheritance
 [21]: https://stackoverflow.com/questions/12640468/c-inherited-copy-constructor-call
+[22]: https://www.tutorialspoint.com/cplusplus/cpp_casting_operators.htm
+[23]: https://stackoverflow.com/questions/2659116/how-does-virtual-inheritance-solve-the-diamond-multiple-inheritance-ambiguit

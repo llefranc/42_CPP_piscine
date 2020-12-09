@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:20:46 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 15:20:52 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/09 16:01:55 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,24 @@ int main()
 	std::cout << std::endl;
 	dumbass.beRecharged(50);
 	dumbass.beRecharged(100);
+
+
+	std::cout << "\n\n---------- CLAPTRAP TESTS ----------\n\n";
+	
+	ClapTrap stupid("Stupid");
+	stupid.meleeAttack("Handsome Jack");
+	stupid.rangedAttack("Handsome Jack");
+	std::cout << std::endl;
+
+	stupid.takeDamage(1);
+	stupid.takeDamage(40);
+	stupid.beRepaired(30);
+	stupid.beRepaired(100);
+	
+	std::cout << std::endl;
+	stupid.beRecharged(50);
+	stupid.beRecharged(100);
+	std::cout << std::endl;
 
 	return (0);
 }
