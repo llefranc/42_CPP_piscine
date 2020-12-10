@@ -6,16 +6,16 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/10 15:20:04 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/10 17:47:40 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	scavtrap
+NAME		=	sorcerer
 CC			=	clang++
 FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
-SRCS		=	main.cpp FragTrap.cpp ScavTrap.cpp
-HEADER		=	FragTrap.hpp ScavTrap.hpp
+SRCS		=	main.cpp Sorcerer.cpp Victim.cpp Peon.cpp
+HEADER		=	Sorcerer.hpp Victim.hpp Peon.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 all		: 	$(NAME)

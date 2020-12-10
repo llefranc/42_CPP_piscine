@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:20:46 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 15:21:06 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/10 16:34:47 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ int main()
 	std::cout << std::endl;
 	idiot.beRecharged(50);
 	idiot.beRecharged(100);
-	
+
 	return (0);
 }

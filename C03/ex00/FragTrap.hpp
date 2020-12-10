@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 17:21:34 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/09 11:13:45 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/10 16:24:58 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class FragTrap
 		
 	public:	
 	
-		// Constructors
+		// Default constructor
 		FragTrap(const std::string& name = "Claptrap");
 		
 		// Copy constructor / destructor / assignment operator

@@ -6,13 +6,13 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/09 19:45:01 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/09 20:19:14 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	ninjatrap
 CC			=	clang++
-FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
+FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp FragTrap.cpp ScavTrap.cpp ClapTrap.cpp NinjaTrap.cpp
 HEADER		=	FragTrap.hpp ScavTrap.hpp ClapTrap.hpp NinjaTrap.cpp

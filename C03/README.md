@@ -16,7 +16,7 @@
 
         git clone https://github.com/lucaslefrancq/42_CPP_piscine.git
 
-2. `cd` into the root directory, then `cd` into C02 and choose the exercise. Then run `make`.
+2. `cd` into the root directory, then `cd` into C03 and choose the exercise. Then run `make`.
 
         cd 42_CPP_piscine/C03/ex00
         make
