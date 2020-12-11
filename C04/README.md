@@ -31,6 +31,7 @@
 - [FAQ sur le C++ (FR)][5]
 - [Passing an object by value and slicing it][6]
 - [Upcasting / downcasting / dynamic cast][7]
+- [Forward class declaration][8]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C03/cpp03.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -39,3 +40,4 @@
 [5]: https://cpp.developpez.com/faq/cpp/
 [6]: https://www.bogotobogo.com/cplusplus/slicing.php
 [7]: https://www.bogotobogo.com/cplusplus/upcasting_downcasting.php#:~:text=A%20Child%20object%20is%20a,do%20to%20a%20Child%20object.
+[8]: https://stackoverflow.com/questions/32398707/using-a-header-file-in-one-code-file-and-then-vice-versa/32398835

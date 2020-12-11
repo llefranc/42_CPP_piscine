@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 12:46:55 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 14:55:34 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/11 15:13:08 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,9 @@ void Character::equip(AWeapon* aWeapon)
 	_characWeapon = aWeapon;
 }
 
+
+// Attacks 'enemy' if the character got a weapon and enough AP. If he kills
+// the enemy, 'enemy' is deleted inside the method but the ptr isn't set to 0.
 void Character::attack(Enemy* enemy)
 {
 	if (!_characWeapon)
