@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 23:25:22 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/11 23:27:41 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int main()
 	
 	jim->unequip(0);
 	jim->unequip(5);
-	free(tmp2);
+	delete tmp2;
 	
 	jim->equip(src->createMateria("cure"));
 	
