@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 18:07:03 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 15:11:20 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/11 23:13:05 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,10 @@ int main()
 	me->recoverAP();
 	
 	me->attack(b);
+
+	delete me;
+	delete pf;
+	delete pr;
 	
 	return (0);
 }

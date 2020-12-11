@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 23:02:16 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/11 23:18:28 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,12 @@
 
 int main()
 {
+	Ice* ice = new Ice();
+	Cure* cure = new Cure();
+	
 	IMateriaSource* src = new MateriaSource();
-	src->learnMateria(new Ice());
-	src->learnMateria(new Cure());
+	src->learnMateria(ice);
+	src->learnMateria(cure);
 	
 	ICharacter* me = new Character("me");
 	
@@ -59,11 +62,9 @@ int main()
 	Character* jim3 = new Character("Henri");
 	*jim3 = *jim;
 
-	Ice* ice = new Ice();
-	
-	src->learnMateria(new Ice());
-	src->learnMateria(new Ice());
-	src->learnMateria(new Ice());
+	src->learnMateria(ice);
+	src->learnMateria(ice);
+	src->learnMateria(ice);
 	
 	jim2->use(0, *jim);
 	jim2->use(1, *jim);
@@ -75,6 +76,7 @@ int main()
 
 	delete src;
 	delete ice;
+	delete cure;
 	
 	delete jim;
 	delete jim2;
