@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 23:18:28 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/11 23:25:22 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,15 @@ int main()
 
 	Character* jim = new Character("Jim");
 	
-	jim->equip(src->createMateria("ice"));
+	AMateria *tmp2 = src->createMateria("ice");
+	
+	jim->equip(tmp2);
 	jim->equip(src->createMateria("ice"));
 	jim->equip(src->createMateria("ice"));
 	
 	jim->unequip(0);
 	jim->unequip(5);
+	free(tmp2);
 	
 	jim->equip(src->createMateria("cure"));
 	
