@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/12 11:43:45 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/12 11:43:57 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int main()
 	tmp = src->createMateria("cure");
 	me->equip(tmp);
 	
+	// Polymorphism
 	ICharacter* bob = new Character("bob");
 	
-	// Polymorphism
 	me->use(0, *bob);
 	me->use(1, *bob);
 	
