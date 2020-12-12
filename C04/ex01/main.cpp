@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 18:07:03 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/12 11:28:22 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/12 12:06:26 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,8 @@ int main()
 	std::cout << *me;
 	me->attack(b);
 	std::cout << *me;
+	
+	// Radscopion is killed and so get deleted 
 	me->attack(b);
 	std::cout << *me;
 	
@@ -65,6 +67,7 @@ int main()
 	me->recoverAP();
 	me->recoverAP();
 	
+	// Supermutant is killed and so get deleted 
 	me->attack(b);
 
 	delete me;
