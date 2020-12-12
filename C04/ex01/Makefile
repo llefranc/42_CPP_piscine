@@ -6,13 +6,13 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/11 23:28:29 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/12 11:28:40 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	wasteland
 CC			=	clang++
-FLAGS		=	-Wall -Wextra -Werror -std=c++98
+FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp AWeapon.cpp PlasmaRifle.cpp PowerFist.cpp Enemy.cpp SuperMutant.cpp \
 				RadScorpion.cpp Character.cpp

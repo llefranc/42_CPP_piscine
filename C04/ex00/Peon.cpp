@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 17:13:32 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/10 17:46:06 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/12 11:07:25 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,5 @@ void swap(Peon& a, Peon& b)
 
 void Peon::getPolymorphed() const
 {
-	std::cout << _name << "has been turned into a pink pony!\n";
+	std::cout << _name << " has been turned into a pink pony!\n";
 }

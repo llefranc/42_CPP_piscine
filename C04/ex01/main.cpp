@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 18:07:03 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 23:13:05 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/12 11:28:22 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,9 @@ int main()
 	me->equip(pr);
 	std::cout << *me;
 	me->equip(pf);
+	std::cout << *me;
 	
+	std::cout << "\n-----TESTS RADSCORPION-----\n";
 	me->attack(b);
 	std::cout << *me;
 	me->equip(pr);
@@ -45,6 +47,7 @@ int main()
 	me->attack(b);
 	std::cout << *me;
 	
+	std::cout << "\n-----TESTS SUPERMUTANT-----\n";
 	b = new SuperMutant();
 
 	me->recoverAP();

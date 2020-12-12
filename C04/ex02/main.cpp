@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 16:13:41 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 17:18:49 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/12 11:32:36 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ int main()
 	Squad reinforcements2(reinforcements);
 
 	std::cout << "\nThird wave of reinforcements launched:\n";
-	Squad reinforcements3;
+	Squad reinforcements3(reinforcements2);
+	std::cout << ">>>> Assignment operator:\n";
 	reinforcements3 = reinforcements;
 
 
