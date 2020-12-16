@@ -1,59 +1,59 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Squad.cpp                                          :+:      :+:    :+:   */
+/*   ZombieSquad.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: heleneherin <heleneherin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/12/11 16:33:03 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/15 15:02:12 by heleneherin      ###   ########.fr       */
+/*   Created: 2020/12/15 15:09:44 by heleneherin       #+#    #+#             */
+/*   Updated: 2020/12/15 15:11:07 by heleneherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Squad.hpp"
+#include "ZombieSquad.hpp"
 
-Squad::Squad() :
+ZombieSquad::ZombieSquad() :
 	_nbUnits(0), _squad(0) {}
 
-Squad::~Squad()
+ZombieSquad::~ZombieSquad()
 {
 	for (int i = 0; i < _nbUnits; i++)
 		delete _squad[i];
 	delete[] _squad;
 }
 
-Squad::Squad(const Squad& copyObj) : _nbUnits(copyObj._nbUnits)
+ZombieSquad::ZombieSquad(const ZombieSquad& copyObj) : _nbUnits(copyObj._nbUnits)
 {
 	_squad = new ISpaceMarine* [copyObj._nbUnits];
 	for (int i = 0; i < copyObj._nbUnits; i++)
 		_squad[i] = copyObj._squad[i]->clone();
 }
 
-Squad& Squad::operator=(Squad assignObj)
+ZombieSquad& ZombieSquad::operator=(ZombieSquad assignObj)
 {
 	swap(*this, assignObj);
 	return (*this);
 }
 
-void swap(Squad& a, Squad& b)
+void swap(ZombieSquad& a, ZombieSquad& b)
 {
 	std::swap(a._nbUnits, b._nbUnits);
 	std::swap(a._squad, b._squad);
 }
 
-int Squad::getCount() const
+int ZombieSquad::getCount() const
 {
 	return (_nbUnits);
 }
 
-ISpaceMarine* Squad::getUnit(int index) const
+ISpaceMarine* ZombieSquad::getUnit(int index) const
 {
 	if (index > _nbUnits)
 		return (0);
 	return (_squad[index]);
 }
 
-int Squad::push(ISpaceMarine* newUnit)
+int ZombieSquad::push(ISpaceMarine* newUnit)
 {
 	ISpaceMarine** tmp = _squad;
 

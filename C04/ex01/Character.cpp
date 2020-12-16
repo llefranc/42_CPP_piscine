@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
+/*   By: heleneherin <heleneherin@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 12:46:55 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/11 15:13:08 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/15 15:05:10 by heleneherin      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 // Default constructor
 Character::Character(const std::string& name, unsigned int actionPoints, AWeapon* characWeapon) :
 	_name(name), _actionPoints(actionPoints), _characWeapon(characWeapon) {}
-	
+
 // Destructor
 Character::~Character() {}
 
 // Copy constructor
 Character::Character(const Character& copyObj) :
 	_name(copyObj._name), _actionPoints(copyObj._actionPoints), _characWeapon(copyObj._characWeapon) {}
-	
+
 // Assignment operator= with copy and swap idiom
 Character& Character::operator=(Character assignObj)
 {
@@ -66,7 +66,6 @@ void Character::equip(AWeapon* aWeapon)
 	_characWeapon = aWeapon;
 }
 
-
 // Attacks 'enemy' if the character got a weapon and enough AP. If he kills
 // the enemy, 'enemy' is deleted inside the method but the ptr isn't set to 0.
 void Character::attack(Enemy* enemy)
@@ -81,7 +80,7 @@ void Character::attack(Enemy* enemy)
 		std::cout << _name << " doesn't have enough AP to attack!\n";
 		return ;
 	}
-	
+
 	// Doing the attack
 	_actionPoints -= _characWeapon->getAPCost();
 	std::cout << _name << " attacks " << enemy->getType() << " with a " << _characWeapon->getName() << "\n";
