@@ -1,6 +1,6 @@
 # CPP_04 (@42Paris)
 
-"Inheritance"
+"Subtype polymorphism, abstract classes, interfaces"
 
 ## About
 
@@ -33,7 +33,7 @@
 - [Upcasting / downcasting / dynamic cast][7]
 - [Forward class declaration][8]
 
-[1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C03/cpp03.en.subject.pdf
+[1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/C04/cpp04.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
 [3]: https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c/1894377-quest-ce-que-le-c
 [4]: http://www.cplusplus.com/reference/iomanip/
