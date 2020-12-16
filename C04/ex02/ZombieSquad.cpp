@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieSquad.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: heleneherin <heleneherin@student.42.fr>    +#+  +:+       +#+        */
+/*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/15 15:09:44 by heleneherin       #+#    #+#             */
-/*   Updated: 2020/12/15 15:11:07 by heleneherin      ###   ########.fr       */
+/*   Updated: 2020/12/16 11:29:29 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ int ZombieSquad::push(ISpaceMarine* newUnit)
 		_squad[i] = tmp[i];
 	_squad[_nbUnits] = newUnit;
 
+	std::cout << "A spacemarine turned into a zombie!\n";
 	_nbUnits++;
 	delete[] tmp;
 	return (_nbUnits);

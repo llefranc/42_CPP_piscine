@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/12 11:29:44 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/16 11:29:44 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ NAME		=	squad
 CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
-SRCS		=	main.cpp TacticalMarine.cpp AssaultTerminator.cpp Squad.cpp
-HEADER		=	ISpaceMarine.hpp TacticalMarine.hpp AssaultTerminator.hpp ISquad.hpp Squad.hpp
+SRCS		=	main.cpp TacticalMarine.cpp AssaultTerminator.cpp Squad.cpp ZombieSquad.cpp
+HEADER		=	ISpaceMarine.hpp TacticalMarine.hpp AssaultTerminator.hpp ISquad.hpp Squad.hpp ZombieSquad.hpp
 				
 OBJS		=	$(SRCS:.cpp=.o)
 

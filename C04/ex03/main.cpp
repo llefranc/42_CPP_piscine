@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/12 11:43:57 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/16 11:47:06 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 #include "MateriaSource.hpp"
 #include "ICharacter.hpp"
 #include "Character.hpp"
+#include "Enemy.hpp"
 
 int main()
 {
@@ -46,6 +47,8 @@ int main()
 	
 	me->use(0, *bob);
 	me->use(1, *bob);
+	std::cout << std::endl;
+
 	
 	delete bob;
 	delete me;
@@ -80,11 +83,21 @@ int main()
 	jim2->use(0, *jim);
 	jim2->use(1, *jim);
 	jim2->use(3, *jim);
+	std::cout << std::endl;
+
 
 	// using polymorphism
 	jim3->use(0, *jim);
 	jim3->use(1, *jim);
 	jim3->use(3, *jim);
+	std::cout << std::endl;
+
+
+	// polymorphism with ICharacter and Enemy class
+	ICharacter* pedro = new Enemy("pedro");
+	pedro->equip(ice);
+	pedro->use(0, *jim);
+	pedro->unequip(0);
 
 	delete src;
 	delete ice;
@@ -93,6 +106,7 @@ int main()
 	delete jim;
 	delete jim2;
 	delete jim3;
+	delete pedro;
 	
 	return (0);
 }

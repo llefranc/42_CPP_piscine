@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 16:13:41 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/12 11:32:36 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/16 11:36:43 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "TacticalMarine.hpp"
 #include "ISquad.hpp"
 #include "Squad.hpp"
+#include "ZombieSquad.hpp"
 
 int main()
 {
@@ -83,11 +84,32 @@ int main()
 		cur->meleeAttack();
 	}
 	
+	// Testing polymorphism on Isquad object
+	std::cout << "\n\nSome spacemarines turned into zombies!\n";
+	std::cout << "-----------------------------------------\n";
+	ISquad* zombieSquad = new ZombieSquad;
 	
-	std::cout << "\nDeleting heap allocation:\n\n";
-	delete vlc;
+	ISpaceMarine* zombieBob = new TacticalMarine;
+	ISpaceMarine* zombieJim = new AssaultTerminator;
+	ISpaceMarine* zombieTom = zombieBob->clone();
 	
-	std::cout << "\nDeleting stack allocation:\n\n";
+	zombieSquad->push(zombieBob);
+	zombieSquad->push(zombieJim);
+	zombieSquad->push(zombieTom);
 
+
+	std::cout << "\n\nDeleting heap allocation:\n";
+	std::cout << "-----------------------------------------\n\n";
+	
+	std::cout << "Spacemarine squad:\n";
+	delete vlc;
+
+	std::cout << "\nZombies squad:\n";
+	delete zombieSquad;
+	
+	// The three waves of reinforcements
+	std::cout << "\n\nDeleting stack allocation:\n";
+	std::cout << "-----------------------------------------\n\n";
+	
 	return (0);
 }

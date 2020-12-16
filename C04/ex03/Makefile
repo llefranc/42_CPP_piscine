@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/12 11:33:18 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/16 11:41:51 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,8 @@ NAME		=	materia
 CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
-SRCS		=	main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp
-HEADER		=	AMateria.hpp Ice.hpp ICharacter.hpp Cure.hpp Character.hpp MateriaSource.hpp
+SRCS		=	main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp MateriaSource.cpp Enemy.cpp
+HEADER		=	AMateria.hpp Ice.hpp ICharacter.hpp Cure.hpp Character.hpp MateriaSource.hpp Enemy.hpp
 				
 OBJS		=	$(SRCS:.cpp=.o)
 
