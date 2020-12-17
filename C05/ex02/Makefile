@@ -6,7 +6,7 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/17 16:03:45 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/17 16:34:00 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,10 @@ NAME		=	form
 CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
-SRCS		=	main.cpp Bureaucrat.cpp Form.cpp
-HEADER		=	Bureaucrat.hpp Form.hpp
+SRCS		=	main.cpp Bureaucrat.cpp Form.cpp ShrubberyCreationForm.cpp PresidentialPardonForm.cpp \
+				RobotomyRequestForm.cpp
+HEADER		=	Bureaucrat.hpp Form.hpp ShrubberyCreationForm.hpp PresidentialPardonForm.hpp \
+				RobotomyRequestForm.hpp
 				
 OBJS		=	$(SRCS:.cpp=.o)
 
