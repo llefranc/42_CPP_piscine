@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 11:27:33 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/17 13:37:37 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/17 13:38:03 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,14 @@ void Bureaucrat::decrementGrade()
 	if (_grade + 1 > 150)
 		throw GradeTooLowException();
 	_grade++;
+}
+
+void Bureaucrat::signForm(int gradeToSign, const std::string formName) const
+{
+	if (_grade <= gradeToSign)
+		std::cout << "<" << _name << "> signs <" << formName << ">\n";
+	else
+		std::cout << "<" << _name << "> cannot signs <" << formName << "> because ";
 }
 
 std::ostream& operator<<(std::ostream& output, Bureaucrat& brct)
