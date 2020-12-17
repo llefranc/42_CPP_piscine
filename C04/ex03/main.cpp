@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 17:19:16 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/16 11:47:06 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/16 16:46:09 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,19 +85,18 @@ int main()
 	jim2->use(3, *jim);
 	std::cout << std::endl;
 
-
 	// using polymorphism
 	jim3->use(0, *jim);
 	jim3->use(1, *jim);
 	jim3->use(3, *jim);
 	std::cout << std::endl;
 
-
 	// polymorphism with ICharacter and Enemy class
 	ICharacter* pedro = new Enemy("pedro");
 	pedro->equip(ice);
 	pedro->use(0, *jim);
 	pedro->unequip(0);
+
 
 	delete src;
 	delete ice;
@@ -107,6 +106,6 @@ int main()
 	delete jim2;
 	delete jim3;
 	delete pedro;
-	
+
 	return (0);
 }

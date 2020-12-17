@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Villager.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: heleneherin <heleneherin@student.42.fr>    +#+  +:+       +#+        */
+/*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 17:13:44 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/15 12:39:55 by heleneherin      ###   ########.fr       */
+/*   Updated: 2020/12/16 16:16:57 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
