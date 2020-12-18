@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 13:15:27 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/18 10:30:48 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 11:06:05 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int main()
 	{
 		ptr = intern.makeForm("robotomy request", "Billy");
 		std::cout << *ptr;
+		delete ptr;
 	}
 	catch(const std::exception& e)
 	{
@@ -51,6 +52,7 @@ int main()
 	{
 		ptr = intern.makeForm("shrubbery creation", "Bob");
 		std::cout << *ptr;
+		delete ptr;
 	}
 	catch(const std::exception& e)
 	{
@@ -62,6 +64,7 @@ int main()
 	{
 		ptr = intern.makeForm("presidential pardon", "Jack");
 		std::cout << *ptr;
+		delete ptr;
 	}
 	catch(const std::exception& e)
 	{
@@ -73,6 +76,7 @@ int main()
 	{
 		ptr = intern.makeForm("random form", "Peter");
 		std::cout << *ptr;
+		delete ptr;
 	}
 	catch(const std::exception& e)
 	{

@@ -45,6 +45,7 @@ utilisation des booleans
 ------------------------------------------------------------------------------
 - attributs / methodes
 - getters / setters
+- public / protected / private
 - classe integree dans une autre class
 - methodes statiques
 - initialization list
@@ -68,3 +69,4 @@ utilisation des booleans
 - pointeur this
 - new / delete
 - for
+- define

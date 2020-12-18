@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 12:58:17 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/17 13:39:30 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 10:52:13 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ Form::GradeTooHighException::GradeTooHighException() throw() {}
 
 const char* Form::GradeTooHighException::what() const throw()
 {
-	return ("Grade is too high (max grade : 1)\n");
+	return ("grade is too high\n");
 }
 
 
@@ -116,5 +116,5 @@ Form::GradeTooLowException::GradeTooLowException() throw() {}
 
 const char* Form::GradeTooLowException::what() const throw()
 {
-	return ("Grade is too low (max grade : 150)\n");
+	return ("grade is too low\n");
 }

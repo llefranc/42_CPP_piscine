@@ -6,12 +6,14 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 15:32:31 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/17 17:40:48 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 11:03:30 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ROBOTOMYREQUESTFORM_HPP
 #define ROBOTOMYREQUESTFORM_HPP
+
+#include <math.h>
 
 #include "Form.hpp"
 

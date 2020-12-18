@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/16 13:15:27 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/17 17:53:34 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 11:01:48 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -122,6 +122,9 @@ int main()
 	{
 		std::cerr << e.what() << '\n';
 	}
+
+	for (int i = 0; i < 3; i++)
+		delete formArray[i];
 
 	return (0);
 }

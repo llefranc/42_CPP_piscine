@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 15:32:47 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/17 17:18:55 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 10:57:51 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ const std::string& ShrubberyCreationForm::getTarget() const
 
 void ShrubberyCreationForm::shrubberyCreation() const
 {
-	std::ofstream myFile(_target + "_shrubbery");
+	std::string fileName = _target + "_shrubbery";
+	std::ofstream myFile(fileName);
 
 	if (!myFile)
 	{
