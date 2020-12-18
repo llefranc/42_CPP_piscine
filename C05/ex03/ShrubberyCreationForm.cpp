@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
+/*   By: user42 <user42@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/17 15:32:47 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/18 11:03:43 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/18 11:10:56 by user42           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ const std::string& ShrubberyCreationForm::getTarget() const
 void ShrubberyCreationForm::shrubberyCreation() const
 {
 	std::string fileName = _target + "_shrubbery";
-	std::ofstream myFile(fileName);
+	std::ofstream myFile(fileName.c_str());
 
 	if (!myFile)
 	{
