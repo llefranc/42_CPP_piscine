@@ -39,3 +39,32 @@ pointeur sur classes dans d'autres classes (marche comme les structures)
 new / delete || new[] delete[]
 ------------------------------------------------------------------------------
 utilisation des booleans
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+- attributs / methodes
+- getters / setters
+- classe integree dans une autre class
+- methodes statiques
+- initialization list
+- constructor
+- copy constructor
+- destructor
+- copy and swap idiom
+- surcharge d'operateur
+- surcharge de fonction via le type des arguments
+- heritage
+- multiple heritage
+- masquage des fonctions dans la classe fille
+- classe concretes / abstraites
+- polymorphisme
+- resolution dynamique des liens (virtual)
+- references
+- pointeurs sur fonctions
+- booleans
+- const
+- exceptions (try / catch / throw)
+- pointeur this
+- new / delete
+- for
