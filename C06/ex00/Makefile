@@ -6,13 +6,13 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/21 10:58:26 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/21 18:29:49 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	static_cast
 CC			=	clang++
-FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
+FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp is_type.cpp transf.cpp
 HEADER		=	static_cast.hpp

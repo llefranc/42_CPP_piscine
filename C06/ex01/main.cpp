@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 16:31:19 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/21 18:06:23 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/21 18:38:07 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,14 @@ void	genRandInt(char* addr)
 
 void*	serialize(void)
 {
-	char* raw = new char[20];
+	void* raw = new char[20];
 	
 	std::cout << "First alphanum series: ";
-	gen8RandAlphaNum(raw);
+	gen8RandAlphaNum(reinterpret_cast<char*>(raw));
 	std::cout << "Random int: ";
-	genRandInt(raw + 8);
+	genRandInt(reinterpret_cast<char*>(raw) + 8);
 	std::cout << "Second alphanum series: ";
-	gen8RandAlphaNum(raw + 12);
+	gen8RandAlphaNum(reinterpret_cast<char*>(raw) + 12);
 	
 	return (raw);
 }
