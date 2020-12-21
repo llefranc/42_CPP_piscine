@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 10:56:12 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/21 16:23:54 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/21 18:26:58 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void printNb(const t_nb& allNb)
 	if ((allNb.nbChar >= 32 && allNb.nbChar <= 126) &&
 			(allNb.nbFloat > 0.0 && allNb.nbFloat < static_cast<float>(std::numeric_limits<char>::max())))
 		std::cout << "Char: \"" << allNb.nbChar << "\"\n";
-	else if (!isnan(allNb.nbDouble) && ((allNb.nbChar >= 0 && allNb.nbChar <= 31) || allNb.nbChar == 127))
+	else if (!isnan(allNb.nbDouble) && (allNb.nbFloat >= 0.0 && allNb.nbFloat < 128.0))
 		std::cout << "Char: non displayable\n";
 	else
 		std::cout << "Char: impossible\n";
