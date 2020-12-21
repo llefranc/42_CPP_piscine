@@ -6,16 +6,16 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/21 18:38:37 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/21 22:41:14 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	reinterpret_cast
+NAME		=	whatever
 CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp 
-HEADER		=	reinterpret_cast.hpp
+HEADER		=	whatever.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 all		: 	$(NAME)
