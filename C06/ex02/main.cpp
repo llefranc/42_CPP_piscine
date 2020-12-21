@@ -13,6 +13,7 @@
 #include <string>
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 
 #include "Base.hpp"
 
@@ -64,7 +65,7 @@ void identify_from_reference(Base& p)
 		std::cout << "Identify from reference: this is class A\n";
 		return ;
 	}
-	catch (std::bad_cast) {}
+	catch (...) {}
 	
 	try
 	{
@@ -73,7 +74,7 @@ void identify_from_reference(Base& p)
 		std::cout << "Identify from reference: this is class B\n";
 		return ;
 	}
-	catch (std::bad_cast) {}
+	catch (...) {}
 
 	try
 	{
@@ -81,7 +82,7 @@ void identify_from_reference(Base& p)
 		(void)refC;
 		std::cout << "Identify from reference: this is class C\n";
 	}
-	catch (std::bad_cast) {}
+	catch (...) {}
 }
 
 int main()

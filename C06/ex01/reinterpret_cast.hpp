@@ -16,6 +16,7 @@
 #include <string>
 #include <iostream>
 #include <time.h>
+#include <cstdlib>
 
 typedef struct	s_data
 {
