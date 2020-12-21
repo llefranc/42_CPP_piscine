@@ -70,3 +70,5 @@ utilisation des booleans
 - new / delete
 - for
 - define
+- gestion des flux
+- les casts
