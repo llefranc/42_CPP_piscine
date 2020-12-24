@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 23:12:13 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/24 10:11:32 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/24 10:13:05 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int main()
 	// Incrementing float with template function
 	iter<float, void(float &)>(arrayF, 3, inc);
 
-	std::cout << "Int array after iter: ";
+	std::cout << "Float array after iter: ";
 	for (int i = 0; i < 3; i++)
 		std::cout << arrayF[i] << " ";
 	std::cout << "\n";
