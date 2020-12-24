@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 10:56:12 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/21 18:26:58 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/22 11:26:07 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,22 @@
 */
 void printNb(const t_nb& allNb)
 {
+	// Printing char and taking care of overflows during cast
+	if ((allNb.nbChar >= 32 && allNb.nbChar <= 126) &&
+			(allNb.nbDouble > 0.0 && allNb.nbDouble < static_cast<double>(std::numeric_limits<char>::max())))
+		std::cout << "Char: \"" << allNb.nbChar << "\"\n";
+	else if (!isnan(allNb.nbDouble) && (allNb.nbDouble >= 0.0 && allNb.nbDouble < 128.0))
+		std::cout << "Char: non displayable\n";
+	else
+		std::cout << "Char: impossible\n";
+	
 	// Printing int and taking care of overflows during cast
-	if ((allNb.nbFloat < 0.0 && allNb.nbFloat < static_cast<float>(std::numeric_limits<int>::min())) ||
-			(allNb.nbFloat > 0.0 && allNb.nbFloat > static_cast<float>(std::numeric_limits<int>::max()))
+	if ((allNb.nbDouble < 0.0 && allNb.nbDouble < static_cast<double>(std::numeric_limits<int>::min())) ||
+			(allNb.nbDouble > 0.0 && allNb.nbDouble > static_cast<double>(std::numeric_limits<int>::max()))
 			|| isnan(allNb.nbDouble))
 		std::cout << "Int: impossible\n";
 	else
 		std::cout << "Int: " << allNb.nbInt << "\n";
-	
-	// Printing char and taking care of overflows during cast
-	if ((allNb.nbChar >= 32 && allNb.nbChar <= 126) &&
-			(allNb.nbFloat > 0.0 && allNb.nbFloat < static_cast<float>(std::numeric_limits<char>::max())))
-		std::cout << "Char: \"" << allNb.nbChar << "\"\n";
-	else if (!isnan(allNb.nbDouble) && (allNb.nbFloat >= 0.0 && allNb.nbFloat < 128.0))
-		std::cout << "Char: non displayable\n";
-	else
-		std::cout << "Char: impossible\n";
 	
 	// Printing float and double
 	std::cout << std::fixed << std::setprecision(1);
