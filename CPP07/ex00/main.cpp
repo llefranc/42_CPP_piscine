@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/21 20:44:13 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/21 22:58:10 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/24 14:04:04 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include <string>
 
 #include "whatever.hpp"
+#include "test.hpp"
 
 int main()
 {
