@@ -31,7 +31,9 @@
 - [FAQ sur le C++ (FR)][5]
 - [Dynamic cast et polymorphisme (FR)][6]
 - [Differents types of casting][8]
-- [Sets precision with std::cout][7]
+- [Set precision with std::cout][7]
+- [Write a friend function with templates][9]
+- [Initialize an array to 0 with new operator][10]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/CPP07/cpp07.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -41,3 +43,5 @@
 [6]: https://cpp.developpez.com/cours/cpp/?page=page_12#LXII
 [7]: http://www.cplusplus.com/reference/ios/ios_base/precision/
 [8]: https://www.tutorialspoint.com/cplusplus/cpp_casting_operators.htm#:~:text=A%20cast%20is%20a%20special,as%20any%20other%20unary%20operator.&text=const_cast%20(expr),or%20volatile%20in%20a%20cast.
+[9]: https://web.mst.edu/~nmjxv3/articles/templates.html
+[10]: https://stackoverflow.com/questions/2204176/how-to-initialise-memory-with-new-operator-in-c
