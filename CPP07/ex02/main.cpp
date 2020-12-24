@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 10:39:32 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/24 12:13:17 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/24 14:32:32 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,23 @@ int main()
 		{
 			for (unsigned int i = 0; i < array.getSizeArray(); i++)
 				std::cout << array[i] << "\n";
+		}
+		catch(const std::exception& e)
+		{
+			std::cerr << e.what() << '\n';
+		}
+	}
+
+
+	// Array of std::strings
+	{
+		std::cout << "------ TEST WITH AN ARRAY OF 5 STRINGS ------\n";
+		Array<std::string> array(static_cast<unsigned int>(5));
+		
+		try
+		{
+			for (unsigned int i = 0; i < array.getSizeArray(); i++)
+				std::cout << "\"" << array[i] << "\"\n";
 		}
 		catch(const std::exception& e)
 		{
