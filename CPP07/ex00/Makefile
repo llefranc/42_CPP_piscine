@@ -15,7 +15,7 @@ CC			=	clang++
 FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp 
-HEADER		=	whatever.hpp test.hpp
+HEADER		=	whatever.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
 all		: 	$(NAME)
