@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 10:39:32 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/24 14:32:32 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/25 18:28:47 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int main()
 	// Array of ints
 	{
 		std::cout << "------ TEST WITH AN ARRAY OF 5 INTS ------\n";
-		Array<int> array(static_cast<unsigned int>(5));
+		Array<int> array(5);
 		
 		try
 		{
@@ -36,7 +36,7 @@ int main()
 	// Array of std::strings
 	{
 		std::cout << "------ TEST WITH AN ARRAY OF 5 STRINGS ------\n";
-		Array<std::string> array(static_cast<unsigned int>(5));
+		Array<std::string> array(5);
 		
 		try
 		{
@@ -53,7 +53,7 @@ int main()
 	// Array of floats with copy constructor
 	{
 		std::cout << "\n------ TEST WITH AN ARRAY OF 3 FLOATS + COPY CONSTRUCTOR ------\n";
-		Array<float> array(static_cast<unsigned int>(3));
+		Array<float> array(3);
 		Array<float> copyArray(array);
 		
 		std::cout << std::fixed << std::setprecision(1);
@@ -71,7 +71,7 @@ int main()
 	// Array of longs with default constructor and assign operator
 	{
 		std::cout << "\n------ TEST WITH AN ARRAY OF 4 LONGS + DEFAULT CONSTRUCTOR + ASSIGN OPERATOR ------\n";
-		Array<long> array(static_cast<unsigned int>(4));
+		Array<long> array(4);
 		Array<long> assignArray;
 		
 		std::cout << "Printing assignArray initialized with default constructor: size = " << assignArray.getSizeArray()
@@ -114,6 +114,16 @@ int main()
 		{
 			std::cerr << e.what() << '\n';
 		}	
+	}
+
+	// Read only when Array is const with overloaded operator[]
+	{
+		std::cout << "\n------ READ ONLY WITH CONST -------\n";
+		const Array<int> array(3);
+		
+		std::cout << array[0] << "\n";
+		// array[0] = 3;
+		// std::cout << array[0] << "\n";
 	}
 
 	return (0);

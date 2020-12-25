@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 10:30:31 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/24 12:14:30 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/25 18:12:34 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ class Array
 		unsigned int getSizeArray() const;
 
 		T& operator[](unsigned int i);
+		const T& operator[](unsigned int i) const;
 		
 	private:
 
@@ -108,6 +109,14 @@ T* Array<T>::getArray() const
 /* Operator overloaded */
 template<typename T>
 T& Array<T>::operator[](unsigned int i)
+{
+	if (i >= _size)
+		throw std::exception();
+	return (_tArray[i]);
+}
+
+template<typename T>
+const T& Array<T>::operator[](unsigned int i) const
 {
 	if (i >= _size)
 		throw std::exception();

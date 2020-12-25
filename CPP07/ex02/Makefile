@@ -6,15 +6,15 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/24 10:56:39 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/25 18:29:05 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	template_class
 CC			=	clang++
-FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
+FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
-SRCS		=	Array.cpp main.cpp
+SRCS		=	main.cpp
 HEADER		=	Array.hpp
 OBJS		=	$(SRCS:.cpp=.o)
 
