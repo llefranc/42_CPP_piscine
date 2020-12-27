@@ -72,3 +72,14 @@ utilisation des booleans
 - define
 - gestion des flux
 - les casts
+- templates (fonctions / class)
+- vector
+- deque
+- stack (LIFO)
+- queue (FIFO)
+- priority queue
+- map
+- ternaire
+- iterateurs
+- foncteurs
+- algortihm
