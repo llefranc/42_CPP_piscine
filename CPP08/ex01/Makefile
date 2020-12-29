@@ -6,13 +6,13 @@
 #    By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/28 10:33:39 by lucaslefran       #+#    #+#              #
-#    Updated: 2020/12/28 12:05:41 by lucaslefran      ###   ########.fr        #
+#    Updated: 2020/12/29 18:30:20 by lucaslefran      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	span
 CC			=	clang++
-FLAGS		=	-g -fsanitize=address -Wall -Wextra -Werror -std=c++98
+FLAGS		=	-Wall -Wextra -Werror -std=c++98
 
 SRCS		=	main.cpp Span.cpp
 HEADER		=	Span.hpp FillMultiSet.hpp

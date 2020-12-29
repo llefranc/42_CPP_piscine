@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/28 16:28:03 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/29 17:58:30 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/29 18:27:08 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ class MutantStack : public std::stack<T>
 		// Begin and end methods that returns an iterator of the underlying container object
 		// that stack is using (could be deque, vector or list. Is a deque by default).
 		// Std::stack<T>::c is a member object of stack container that is the the underlying container.
-		iterator begin() { return std::begin(std::stack<T>::c); }
-		iterator end() { return std::end(std::stack<T>::c); }
+		iterator begin() { return (std::stack<T>::c.begin()); }
+		iterator end() { return (std::stack<T>::c.end()); }
 };
 
 #endif
