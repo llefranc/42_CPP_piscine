@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/27 18:55:31 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/28 12:57:54 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2020/12/28 16:19:01 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,19 @@ int main()
 		std::cout << "\nLongest: " << span.longestSpan() << ", shortest: " << span.shortestSpan() << "\n";
 	}
 
+	{
+		std::cout << "\n--------- Tests from subject ---------\n";
+		Span sp = Span(5);
+		
+		sp.addNumber(5);
+		sp.addNumber(3);
+		sp.addNumber(17);
+		sp.addNumber(9);
+		sp.addNumber(11);
+		
+		std::cout << sp.shortestSpan() << std::endl;
+		std::cout << sp.longestSpan() << std::endl;
+	}
+	
 	return (0);
 }

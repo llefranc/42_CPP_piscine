@@ -33,6 +33,12 @@ last day of the CPP piscine.
 - [Templates and iterators (understanding use of typename keyword)][8]
 - [How to initialize a vector member variable][6]
 - [Containers as a member variable and destructors][9]
+- [Sorted containers in STL][10]
+- [Understanding iterators / containers / algorithm][11]
+- [Different types of iterators][12]
+- [Iterator base class][13]
+- [Understanding iterators traits][14]
+- [Stack container and members attributes][15]
 
 [1]: https://github.com/lucaslefrancq/42_CPP_piscine/blob/main/CPP07/cpp07.en.subject.pdf
 [2]: http://www.cplusplus.com/files/tutorial.pdf
@@ -43,3 +49,9 @@ last day of the CPP piscine.
 [7]: http://www.cplusplus.com/reference/algorithm/find/
 [8]: https://stackoverflow.com/questions/11275444/c-template-typename-iterator
 [9]: https://stackoverflow.com/questions/16798274/handling-de-allocation-of-stl-containers-in-destructors
+[10]: https://stackoverflow.com/questions/15582504/is-there-a-sorted-container-in-the-stl
+[11]: https://stackoverflow.com/questions/5606973/understanding-iterators-in-the-stl
+[12]: https://www.cplusplus.com/reference/iterator/
+[13]: https://www.cplusplus.com/reference/iterator/iterator/
+[14]: https://www.cplusplus.com/reference/iterator/iterator_traits/
+[15]: https://en.cppreference.com/w/cpp/container/stack

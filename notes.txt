@@ -46,7 +46,7 @@ utilisation des booleans
 - attributs / methodes
 - getters / setters
 - public / protected / private
-- classe integree dans une autre class
+- classe integree dans une autre class (nested class)
 - methodes statiques
 - initialization list
 - constructor
