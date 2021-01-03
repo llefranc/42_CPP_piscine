@@ -6,7 +6,7 @@
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/27 18:55:31 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/28 16:19:01 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2021/01/03 16:20:13 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,24 @@ int main()
 			std::cout << *i.second << " ";
 			
 		std::cout << "\nLongest: " << span.longestSpan() << ", shortest: " << span.shortestSpan() << "\n";
+	}
+
+	{
+		std::cout << "\n--------- Array of 3 ints with negative numbers ---------\n";
+		Span span(3);
+		
+		try
+		{
+			span.addNumber(0);
+			span.addNumber(-5);
+			span.addNumber(2);
+		}
+		catch (const std::exception &e)
+		{
+			std::cout << e.what() << "\n";
+		}
+		
+		std::cout << "Longest: " << span.longestSpan() << ", shortest: " << span.shortestSpan() << "\n";
 	}
 
 	{

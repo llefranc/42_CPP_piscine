@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   span.cpp                                           :+:      :+:    :+:   */
+/*   Span.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lucaslefrancq <lucaslefrancq@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/27 18:56:04 by lucaslefran       #+#    #+#             */
-/*   Updated: 2020/12/28 12:56:38 by lucaslefran      ###   ########.fr       */
+/*   Updated: 2021/01/03 16:24:05 by lucaslefran      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void Span::swap(Span& a, Span& b)
 }
 
 /*
-* Adds the number to the settor and inc the iterator
+* Adds the number to the multiset
 */
 void Span::addNumber(int nb)
 {
@@ -47,7 +47,14 @@ int Span::shortestSpan() const
 	if (_multisetInts.size() <= 1)
 		throw std::exception();
 		
-	return (*(++_multisetInts.begin()) - *_multisetInts.begin());
+	int minSpan = *++_multisetInts.begin() - *_multisetInts.begin();
+
+	for (std::pair<std::multiset<int>::iterator, std::multiset<int>::iterator> i(_multisetInts.begin(), ++_multisetInts.begin());
+			i.second != _multisetInts.end(); i.first++, i.second++)	
+		if (minSpan > *i.second - *i.first)
+			minSpan = *i.second - *i.first;
+		
+	return (minSpan);
 }
 
 int Span::longestSpan() const
